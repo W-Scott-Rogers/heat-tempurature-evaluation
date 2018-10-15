@@ -12,6 +12,9 @@ To run:
 * run npm install
 * run ng-serve
 
+Continuous Integration Plan
+* [CI Plan](https://github.com/W-Scott-Rogers/heat-tempurature-evaluation/blob/master/CI-process.md)
+
 Online Version:
 * http://trash80.org/ht-eval/
 * [Acceptance Criteria](https://docs.google.com/document/d/17SoUIVOFJootzXWyAvGgfcOFEIOkh9EV3u9ZwxRIWCE/edit)
