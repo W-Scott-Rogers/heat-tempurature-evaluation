@@ -14,4 +14,4 @@ To run:
 
 Online Version:
 * http://trash80.org/ht-eval/
-* [Acceptance Criteria] (https://docs.google.com/document/d/17SoUIVOFJootzXWyAvGgfcOFEIOkh9EV3u9ZwxRIWCE/edit)
+* [Acceptance Criteria](https://docs.google.com/document/d/17SoUIVOFJootzXWyAvGgfcOFEIOkh9EV3u9ZwxRIWCE/edit)
