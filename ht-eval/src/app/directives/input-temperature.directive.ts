@@ -36,9 +36,9 @@ export function studentResponseValidator(formControl: FormControl) {
     invalid = isNaN(Number(formControl.value));
 
     let formValues = formControl.parent.value;
-    if (formControl.parent.controls.inputTemperatureField.valid &&
-      formControl.parent.controls.targetUnitField.valid) {
-      let inputTemperature = formValues.inputTemperatureField.split(' ');
+    if (formControl.parent.controls['inputTemperatureField'].valid &&
+      formControl.parent.controls['targetUnitField'].valid) {
+      let inputTemperature = formValues['inputTemperatureField'].split(' ');
       let inputTemperatureValue = Number(inputTemperature[0]);
       let inputTemperatureType = TemperatureType[inputTemperature[1]];
       let targetUnit = TemperatureType[formValues.targetUnitField];
