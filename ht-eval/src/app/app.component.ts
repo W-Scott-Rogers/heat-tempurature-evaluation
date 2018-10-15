@@ -19,6 +19,9 @@ export class AppComponent implements OnInit {
     private formBuilder: FormBuilder
   ) { }
 
+  /**
+   * Setup the form group
+   */
   ngOnInit(): void {
     this.quizForm = this.formBuilder.group({
       inputTemperatureField: [{value: '', disabled: false}, [Validators.required, inputTemperatureValidator]],
@@ -28,6 +31,9 @@ export class AppComponent implements OnInit {
     })
   }
 
+  /**
+   * sets the Output field depending on field validation and or answer correctness
+   */
   get output(): string {
     let message = this.quizForm.status.toLowerCase();
     if (this.quizForm.valid) {

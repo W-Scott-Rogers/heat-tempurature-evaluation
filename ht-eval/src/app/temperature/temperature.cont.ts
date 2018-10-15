@@ -1,3 +1,6 @@
+/**
+ * A simple enum to host known types and to assist correct spelling
+ */
 export enum TemperatureType {
   Kelvin = 'Kelvin',
   Celsius = 'Celsius',
@@ -9,6 +12,9 @@ export enum TemperatureType {
   R = 'Rankine'
 }
 
+/**
+ * functions to use for conversion of one unit type to another
+ */
 export const TemperatureConverter = {
   Kelvin : {
     Kelvin : function (value) {

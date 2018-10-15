@@ -12,6 +12,17 @@ To run:
 * run npm install
 * run ng-serve
 
+Important Source Files
+* [Temperature Directive Validators](https://github.com/W-Scott-Rogers/heat-tempurature-evaluation/blob/master/ht-eval/src/app/directives/input-temperature.directive.ts)
+* [Temperature Unit Types Enum and Conversion Functions](https://github.com/W-Scott-Rogers/heat-tempurature-evaluation/blob/master/ht-eval/src/app/temperature/temperature.cont.ts)
+* [Main Class Component](https://github.com/W-Scott-Rogers/heat-tempurature-evaluation/blob/master/ht-eval/src/app/app.component.ts)
+* [Main Class HTML Template](https://github.com/W-Scott-Rogers/heat-tempurature-evaluation/blob/master/ht-eval/src/app/app.component.html)
+* [Main Class CSS Template](https://github.com/W-Scott-Rogers/heat-tempurature-evaluation/blob/master/ht-eval/src/app/app.component.css)
+
+Tests
+* No tests were setup for this project.
+* In the real world, tests would verify validators and conversion functions properly return valid or error messages
+
 Continuous Integration Plan
 * [CI Plan](https://github.com/W-Scott-Rogers/heat-tempurature-evaluation/blob/master/CI-process.md)
 

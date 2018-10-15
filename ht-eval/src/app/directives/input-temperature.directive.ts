@@ -1,6 +1,12 @@
 import {FormControl} from '@angular/forms';
 import {TemperatureConverter, TemperatureType} from '../temperature/temperature.cont';
 
+/**
+ * Validator for input temperature which validates a number and a unit type
+ * This validator automatically sets the field if the first letter matches a known type
+ *
+ * @param formControl
+ */
 export function inputTemperatureValidator(formControl: FormControl) {
   let invalid: boolean = true;
   let temperatureValue: number;
@@ -17,6 +23,12 @@ export function inputTemperatureValidator(formControl: FormControl) {
     return invalid ? {'invalidTemperatureInput': {value: `${temperatureValue} ${temperatureType}`}} : null;
 }
 
+/**
+ * Validator for target units which validates the unit type
+ * This validator automatically sets the field if the first letter matches a known type
+ *
+ * @param formControl
+ */
 export function targetUnitValidator(formControl: FormControl) {
   let invalid: boolean = true;
   let temperatureType: string;
@@ -30,6 +42,11 @@ export function targetUnitValidator(formControl: FormControl) {
   return invalid ? {'invalidTemperatureUnit': {value: temperatureType}} : null;
 }
 
+/**
+ * Validates the students answer is a number and is valid to one decimal (rounded up)
+ *
+ * @param formControl
+ */
 export function studentResponseValidator(formControl: FormControl) {
   let invalid: boolean = true;
   if (formControl.dirty) {
