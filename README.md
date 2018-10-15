@@ -11,3 +11,6 @@ To run:
 * CD to <clone directory>/ht-eval
 * run npm install
 * run ng-serve
+
+Online Version:
+* http://trash80.org/ht-eval/
